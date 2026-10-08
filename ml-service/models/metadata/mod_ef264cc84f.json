@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_ef264cc84f",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "BHEL",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:18:02.462564+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.020798,
+      "rmse": 0.027998,
+      "r2": -0.0376,
+      "directional_accuracy": 50.46,
+      "directional_precision": 0.5087,
+      "directional_recall": 0.7091,
+      "directional_f1": 0.5924,
+      "sample_count": 325,
+      "ticker": "BHEL",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.019379,
+      "rmse": 0.026549,
+      "r2": -0.0476,
+      "directional_accuracy": 52.45,
+      "directional_precision": 0.5849,
+      "directional_recall": 0.511,
+      "directional_f1": 0.5455,
+      "sample_count": 326,
+      "ticker": "BHEL",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\BHEL_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:18:02.462564+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

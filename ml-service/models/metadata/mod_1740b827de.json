@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_1740b827de",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "COLPAL",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:18:43.773047+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.009566,
+      "rmse": 0.012432,
+      "r2": -0.089,
+      "directional_accuracy": 49.85,
+      "directional_precision": 0.4907,
+      "directional_recall": 0.6604,
+      "directional_f1": 0.563,
+      "sample_count": 325,
+      "ticker": "COLPAL",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.009561,
+      "rmse": 0.013287,
+      "r2": -0.2241,
+      "directional_accuracy": 49.39,
+      "directional_precision": 0.5026,
+      "directional_recall": 0.5904,
+      "directional_f1": 0.5429,
+      "sample_count": 326,
+      "ticker": "COLPAL",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\COLPAL_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:18:43.773047+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

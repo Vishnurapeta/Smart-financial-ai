@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_f79b03c181",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "GODREJCP",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:43:28.584821+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.015651,
+      "rmse": 0.020307,
+      "r2": -0.148,
+      "directional_accuracy": 52.31,
+      "directional_precision": 0.544,
+      "directional_recall": 0.4096,
+      "directional_f1": 0.4674,
+      "sample_count": 325,
+      "ticker": "GODREJCP",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.010468,
+      "rmse": 0.01367,
+      "r2": -0.1836,
+      "directional_accuracy": 55.52,
+      "directional_precision": 0.5603,
+      "directional_recall": 0.7692,
+      "directional_f1": 0.6484,
+      "sample_count": 317,
+      "ticker": "GODREJCP",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\GODREJCP_target_next_return_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:43:28.584821+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\GODREJCP_target_next_return_h1_lstm_scaler.joblib",
+  "sequence_length": 30
+}

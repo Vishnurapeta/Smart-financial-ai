@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_385b87f6f6",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "MARICO",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:23:24.455109+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.013299,
+      "rmse": 0.017536,
+      "r2": -0.3673,
+      "directional_accuracy": 52.0,
+      "directional_precision": 0.5076,
+      "directional_recall": 0.4241,
+      "directional_f1": 0.4621,
+      "sample_count": 325,
+      "ticker": "MARICO",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.010566,
+      "rmse": 0.014114,
+      "r2": -0.1619,
+      "directional_accuracy": 51.23,
+      "directional_precision": 0.5146,
+      "directional_recall": 0.3272,
+      "directional_f1": 0.4,
+      "sample_count": 326,
+      "ticker": "MARICO",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\MARICO_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:23:24.455109+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

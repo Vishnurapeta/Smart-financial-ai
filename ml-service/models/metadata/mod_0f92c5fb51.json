@@ -1,0 +1,58 @@
+{
+  "model_id": "mod_0f92c5fb51",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TCS",
+  "target": "target_close_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-11-30 00:00:00",
+  "training_timestamp": "2026-10-05T19:15:38.162649+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 183.7242,
+      "rmse": 233.8104,
+      "mape": 5.1687,
+      "r2": 0.1192,
+      "sample_count": 325,
+      "ticker": "TCS",
+      "model_name": "linear_regression",
+      "target": "target_close_20d",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 172.1252,
+      "rmse": 201.1044,
+      "mape": 5.0923,
+      "r2": -0.5742,
+      "sample_count": 307,
+      "ticker": "TCS",
+      "model_name": "linear_regression",
+      "target": "target_close_20d",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\TCS_target_close_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T19:15:38.162649+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_c103e98d9f",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "IDFCFIRSTB",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-01-21 00:00:00",
+  "training_end": "2021-08-12 00:00:00",
+  "validation_start": "2021-08-13 00:00:00",
+  "validation_end": "2022-10-19 00:00:00",
+  "test_start": "2022-10-20 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:21:28.281761+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.098214,
+      "rmse": 0.127489,
+      "r2": -0.216,
+      "directional_accuracy": 47.96,
+      "directional_precision": 0.5,
+      "directional_recall": 0.2353,
+      "directional_f1": 0.32,
+      "sample_count": 294,
+      "ticker": "IDFCFIRSTB",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.101615,
+      "rmse": 0.130055,
+      "r2": -1.6939,
+      "directional_accuracy": 36.73,
+      "directional_precision": 0.625,
+      "directional_recall": 0.0284,
+      "directional_f1": 0.0543,
+      "sample_count": 275,
+      "ticker": "IDFCFIRSTB",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IDFCFIRSTB_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:21:28.281761+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

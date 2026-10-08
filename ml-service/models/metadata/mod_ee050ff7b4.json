@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_ee050ff7b4",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "BANKBARODA",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:58:07.803411+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.017204,
+      "rmse": 0.022745,
+      "r2": 0.1416,
+      "directional_accuracy": 67.38,
+      "directional_precision": 0.6531,
+      "directional_recall": 0.7711,
+      "directional_f1": 0.7072,
+      "sample_count": 325,
+      "ticker": "BANKBARODA",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.016588,
+      "rmse": 0.021407,
+      "r2": -0.1332,
+      "directional_accuracy": 57.73,
+      "directional_precision": 0.57,
+      "directional_recall": 0.9716,
+      "directional_f1": 0.7185,
+      "sample_count": 317,
+      "ticker": "BANKBARODA",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\BANKBARODA_target_next_return_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T19:58:07.803411+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\BANKBARODA_target_next_return_h1_lstm_scaler.joblib",
+  "sequence_length": 30
+}

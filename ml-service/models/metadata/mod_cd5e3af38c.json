@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_cd5e3af38c",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "RELIANCE",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-11-30 00:00:00",
+  "training_timestamp": "2026-10-05T09:32:39.763106+00:00",
+  "hyperparameters": {
+    "n_estimators": 40,
+    "max_depth": 6,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.087407,
+      "rmse": 0.107081,
+      "r2": -1.2789,
+      "directional_accuracy": 52.92,
+      "directional_precision": 1.0,
+      "directional_recall": 0.0497,
+      "directional_f1": 0.0947,
+      "sample_count": 325,
+      "ticker": "RELIANCE",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.096762,
+      "rmse": 0.110573,
+      "r2": -3.5979,
+      "directional_accuracy": 47.56,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 307,
+      "ticker": "RELIANCE",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\RELIANCE_target_return_20d_h20_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T09:32:39.763106+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

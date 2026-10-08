@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_ccc977d4ad",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "WHIRLPOOL",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:31:54.358854+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.083054,
+      "rmse": 0.10064,
+      "r2": -0.6845,
+      "directional_accuracy": 45.23,
+      "directional_precision": 0.4452,
+      "directional_recall": 0.9241,
+      "directional_f1": 0.6009,
+      "sample_count": 325,
+      "ticker": "WHIRLPOOL",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.06353,
+      "rmse": 0.080867,
+      "r2": -0.4099,
+      "directional_accuracy": 43.32,
+      "directional_precision": 0.4045,
+      "directional_recall": 0.878,
+      "directional_f1": 0.5538,
+      "sample_count": 307,
+      "ticker": "WHIRLPOOL",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\WHIRLPOOL_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:31:54.358854+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

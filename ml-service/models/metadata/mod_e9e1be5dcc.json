@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_e9e1be5dcc",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TATAPOWER",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:28:08.092453+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.33055,
+      "rmse": 0.410804,
+      "r2": -6.1561,
+      "directional_accuracy": 58.77,
+      "directional_precision": 0.6441,
+      "directional_recall": 0.8419,
+      "directional_f1": 0.7298,
+      "sample_count": 325,
+      "ticker": "TATAPOWER",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.195924,
+      "rmse": 0.236403,
+      "r2": -7.0285,
+      "directional_accuracy": 53.09,
+      "directional_precision": 0.5452,
+      "directional_recall": 0.9532,
+      "directional_f1": 0.6936,
+      "sample_count": 307,
+      "ticker": "TATAPOWER",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TATAPOWER_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:28:08.092453+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

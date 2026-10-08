@@ -1,0 +1,66 @@
+{
+  "model_id": "mod_0ffcd34391",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TCS",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:23:11.919628+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.01107,
+      "rmse": 0.014879,
+      "r2": -0.1204,
+      "directional_accuracy": 52.0,
+      "directional_precision": 0.5591,
+      "directional_recall": 0.4152,
+      "directional_f1": 0.4765,
+      "sample_count": 325,
+      "ticker": "TCS",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.009002,
+      "rmse": 0.012104,
+      "r2": -0.0983,
+      "directional_accuracy": 51.84,
+      "directional_precision": 0.5463,
+      "directional_recall": 0.3533,
+      "directional_f1": 0.4291,
+      "sample_count": 326,
+      "ticker": "TCS",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TCS_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:23:11.919628+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

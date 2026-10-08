@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_39a4091f6b",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "PFC",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:25:24.095811+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.012816,
+      "rmse": 0.016575,
+      "r2": -0.0671,
+      "directional_accuracy": 48.0,
+      "directional_precision": 0.4764,
+      "directional_recall": 0.5687,
+      "directional_f1": 0.5185,
+      "sample_count": 325,
+      "ticker": "PFC",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.036929,
+      "rmse": 0.059059,
+      "r2": -5.7896,
+      "directional_accuracy": 50.31,
+      "directional_precision": 0.6349,
+      "directional_recall": 0.2235,
+      "directional_f1": 0.3306,
+      "sample_count": 326,
+      "ticker": "PFC",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\PFC_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:25:24.095811+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

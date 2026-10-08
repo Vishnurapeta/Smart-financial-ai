@@ -1,0 +1,71 @@
+{
+  "model_id": "mod_cf9227a121",
+  "model_name": "XGBoost",
+  "model_version": "1.0.0",
+  "ticker": "ADANIGREEN",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2018-08-29 00:00:00",
+  "training_end": "2022-05-25 00:00:00",
+  "validation_start": "2022-05-26 00:00:00",
+  "validation_end": "2023-03-08 00:00:00",
+  "test_start": "2023-03-09 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:16:14.241452+00:00",
+  "hyperparameters": {
+    "n_estimators": 40,
+    "max_depth": 4,
+    "learning_rate": 0.06,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3.0,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "early_stopping_rounds": 15
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.026165,
+      "rmse": 0.039491,
+      "r2": 0.02,
+      "directional_accuracy": 54.31,
+      "directional_precision": 0.5042,
+      "directional_recall": 0.6593,
+      "directional_f1": 0.5714,
+      "sample_count": 197,
+      "ticker": "ADANIGREEN",
+      "model_name": "xgboost",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.020643,
+      "rmse": 0.030608,
+      "r2": 0.1117,
+      "directional_accuracy": 57.07,
+      "directional_precision": 0.5333,
+      "directional_recall": 0.8421,
+      "directional_f1": 0.6531,
+      "sample_count": 198,
+      "ticker": "ADANIGREEN",
+      "model_name": "xgboost",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ADANIGREEN_target_next_return_h1_xgboost_xgboost.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:16:14.241452+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

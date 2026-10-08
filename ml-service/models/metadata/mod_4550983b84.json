@@ -1,0 +1,57 @@
+{
+  "model_id": "mod_4550983b84",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "GLOBAL",
+  "target": "target_close_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-21 00:00:00",
+  "training_timestamp": "2026-10-05T19:29:21.990675+00:00",
+  "hyperparameters": {
+    "task_type": "price",
+    "strategy": "current_close"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 97.3409,
+      "rmse": 230.746,
+      "mape": 3.5747,
+      "r2": 0.9978,
+      "sample_count": 6500,
+      "ticker": "GLOBAL",
+      "model_name": "naive",
+      "target": "target_close_5d",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 83.5933,
+      "rmse": 186.7748,
+      "mape": 3.1604,
+      "r2": 0.999,
+      "sample_count": 6440,
+      "ticker": "GLOBAL",
+      "model_name": "naive",
+      "target": "target_close_5d",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\GLOBAL_target_close_5d_h5_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:29:21.990675+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

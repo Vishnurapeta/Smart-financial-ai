@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_265cd9a103",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "LALPATHLAB",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-03-04 00:00:00",
+  "training_end": "2021-08-26 00:00:00",
+  "validation_start": "2021-08-27 00:00:00",
+  "validation_end": "2022-10-25 00:00:00",
+  "test_start": "2022-10-27 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:53.579547+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.020927,
+      "rmse": 0.02729,
+      "r2": -0.1624,
+      "directional_accuracy": 47.06,
+      "directional_precision": 0.4679,
+      "directional_recall": 0.9704,
+      "directional_f1": 0.6313,
+      "sample_count": 289,
+      "ticker": "LALPATHLAB",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.013769,
+      "rmse": 0.018758,
+      "r2": -0.0258,
+      "directional_accuracy": 52.76,
+      "directional_precision": 0.5211,
+      "directional_recall": 0.9933,
+      "directional_f1": 0.6836,
+      "sample_count": 290,
+      "ticker": "LALPATHLAB",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\LALPATHLAB_target_next_return_h1_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:22:53.579547+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

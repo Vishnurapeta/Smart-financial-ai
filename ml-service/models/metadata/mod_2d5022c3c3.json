@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_2d5022c3c3",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "ICICIGI",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2017-12-08 00:00:00",
+  "training_end": "2022-03-04 00:00:00",
+  "validation_start": "2022-03-07 00:00:00",
+  "validation_end": "2023-01-27 00:00:00",
+  "test_start": "2023-01-30 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:21:18.618229+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.027521,
+      "rmse": 0.037703,
+      "r2": -0.0011,
+      "directional_accuracy": 53.12,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 224,
+      "ticker": "ICICIGI",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.021043,
+      "rmse": 0.029223,
+      "r2": -0.0382,
+      "directional_accuracy": 43.89,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 221,
+      "ticker": "ICICIGI",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ICICIGI_target_return_5d_h5_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:21:18.618229+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

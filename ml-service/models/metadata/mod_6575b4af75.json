@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_6575b4af75",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TORNTPHARM",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:28:59.300851+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.014445,
+      "rmse": 0.020085,
+      "r2": -0.3072,
+      "directional_accuracy": 47.08,
+      "directional_precision": 0.4407,
+      "directional_recall": 0.3291,
+      "directional_f1": 0.3768,
+      "sample_count": 325,
+      "ticker": "TORNTPHARM",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.015331,
+      "rmse": 0.019332,
+      "r2": -1.4048,
+      "directional_accuracy": 47.55,
+      "directional_precision": 0.5,
+      "directional_recall": 0.0526,
+      "directional_f1": 0.0952,
+      "sample_count": 326,
+      "ticker": "TORNTPHARM",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TORNTPHARM_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:28:59.300851+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

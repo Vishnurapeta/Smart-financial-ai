@@ -1,0 +1,66 @@
+{
+  "model_id": "mod_03c4fd5533",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TCS",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-21 00:00:00",
+  "training_timestamp": "2026-10-05T18:56:09.710897+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.030893,
+      "rmse": 0.039355,
+      "r2": -0.5659,
+      "directional_accuracy": 48.0,
+      "directional_precision": 0.5658,
+      "directional_recall": 0.2402,
+      "directional_f1": 0.3373,
+      "sample_count": 325,
+      "ticker": "TCS",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.022515,
+      "rmse": 0.028645,
+      "r2": -0.3866,
+      "directional_accuracy": 49.69,
+      "directional_precision": 0.625,
+      "directional_recall": 0.2747,
+      "directional_f1": 0.3817,
+      "sample_count": 322,
+      "ticker": "TCS",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TCS_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:56:09.710897+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

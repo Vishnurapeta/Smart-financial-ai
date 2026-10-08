@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_cf39a07f99",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "NYKAA",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2022-01-20 00:00:00",
+  "training_end": "2023-05-30 00:00:00",
+  "validation_start": "2023-05-31 00:00:00",
+  "validation_end": "2023-09-08 00:00:00",
+  "test_start": "2023-09-11 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:24:44.365071+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.06301,
+      "rmse": 0.079642,
+      "r2": -0.2124,
+      "directional_accuracy": 59.15,
+      "directional_precision": 0.614,
+      "directional_recall": 0.8333,
+      "directional_f1": 0.7071,
+      "sample_count": 71,
+      "ticker": "NYKAA",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.121585,
+      "rmse": 0.151391,
+      "r2": -1.0254,
+      "directional_accuracy": 35.19,
+      "directional_precision": 0.4615,
+      "directional_recall": 0.5625,
+      "directional_f1": 0.507,
+      "sample_count": 54,
+      "ticker": "NYKAA",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\NYKAA_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:24:44.365071+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

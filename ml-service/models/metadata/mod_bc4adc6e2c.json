@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_bc4adc6e2c",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "IDFCFIRSTB",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-01-21 00:00:00",
+  "training_end": "2021-08-12 00:00:00",
+  "validation_start": "2021-08-13 00:00:00",
+  "validation_end": "2022-10-19 00:00:00",
+  "test_start": "2022-10-20 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:21:23.525937+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.019449,
+      "rmse": 0.025704,
+      "r2": -0.0584,
+      "directional_accuracy": 50.0,
+      "directional_precision": 0.4331,
+      "directional_recall": 0.4231,
+      "directional_f1": 0.428,
+      "sample_count": 294,
+      "ticker": "IDFCFIRSTB",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.013842,
+      "rmse": 0.019112,
+      "r2": -0.2842,
+      "directional_accuracy": 52.72,
+      "directional_precision": 0.6048,
+      "directional_recall": 0.4545,
+      "directional_f1": 0.519,
+      "sample_count": 294,
+      "ticker": "IDFCFIRSTB",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IDFCFIRSTB_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:21:23.525937+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

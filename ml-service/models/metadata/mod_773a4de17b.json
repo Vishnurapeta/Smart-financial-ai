@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_773a4de17b",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "METROPOLIS",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-07-01 00:00:00",
+  "training_end": "2022-08-19 00:00:00",
+  "validation_start": "2022-08-22 00:00:00",
+  "validation_end": "2023-04-25 00:00:00",
+  "test_start": "2023-04-26 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:23:50.213899+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.018278,
+      "rmse": 0.023716,
+      "r2": -0.2609,
+      "directional_accuracy": 44.31,
+      "directional_precision": 0.4091,
+      "directional_recall": 0.6164,
+      "directional_f1": 0.4918,
+      "sample_count": 167,
+      "ticker": "METROPOLIS",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.015667,
+      "rmse": 0.020166,
+      "r2": -0.1328,
+      "directional_accuracy": 48.81,
+      "directional_precision": 0.5033,
+      "directional_recall": 0.8736,
+      "directional_f1": 0.6387,
+      "sample_count": 168,
+      "ticker": "METROPOLIS",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\METROPOLIS_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:23:50.213899+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_c0c99dc5e5",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "ADANIENT",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:16:11.249067+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.066323,
+      "rmse": 0.077638,
+      "r2": -8.4839,
+      "directional_accuracy": 60.0,
+      "directional_precision": 0.6061,
+      "directional_recall": 0.9326,
+      "directional_f1": 0.7347,
+      "sample_count": 325,
+      "ticker": "ADANIENT",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.164618,
+      "rmse": 0.189686,
+      "r2": -18.3008,
+      "directional_accuracy": 52.45,
+      "directional_precision": 0.5212,
+      "directional_recall": 0.9524,
+      "directional_f1": 0.6737,
+      "sample_count": 326,
+      "ticker": "ADANIENT",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ADANIENT_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:16:11.249067+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_2600c9662f",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "INFY",
+  "target": "target_next_close",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:58:50.524335+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 10,
+    "patience": 3,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 1621.5357,
+      "rmse": 1628.1146,
+      "mape": 98.7999,
+      "r2": -122.9884,
+      "sample_count": 325,
+      "ticker": "INFY",
+      "model_name": "lstm",
+      "target": "target_next_close",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 1420.8215,
+      "rmse": 1424.4556,
+      "mape": 98.6366,
+      "r2": -195.2326,
+      "sample_count": 326,
+      "ticker": "INFY",
+      "model_name": "lstm",
+      "target": "target_next_close",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\INFY_target_next_close_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:58:50.524335+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\INFY_target_next_close_h1_lstm_scaler.joblib",
+  "sequence_length": 30
+}

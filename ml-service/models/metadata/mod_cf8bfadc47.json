@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_cf8bfadc47",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "HDFCLIFE",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2018-01-30 00:00:00",
+  "training_end": "2022-03-21 00:00:00",
+  "validation_start": "2022-03-22 00:00:00",
+  "validation_end": "2023-02-03 00:00:00",
+  "test_start": "2023-02-06 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:20:40.517269+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.012839,
+      "rmse": 0.018094,
+      "r2": -0.0257,
+      "directional_accuracy": 51.14,
+      "directional_precision": 0.488,
+      "directional_recall": 0.7864,
+      "directional_f1": 0.6022,
+      "sample_count": 219,
+      "ticker": "HDFCLIFE",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.011162,
+      "rmse": 0.015752,
+      "r2": -0.0501,
+      "directional_accuracy": 53.18,
+      "directional_precision": 0.5353,
+      "directional_recall": 0.7913,
+      "directional_f1": 0.6386,
+      "sample_count": 220,
+      "ticker": "HDFCLIFE",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\HDFCLIFE_target_next_return_h1_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:20:40.517269+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

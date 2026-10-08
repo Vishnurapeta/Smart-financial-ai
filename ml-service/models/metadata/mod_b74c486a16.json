@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_b74c486a16",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "GODREJCP",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:19:53.798889+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.039847,
+      "rmse": 0.051061,
+      "r2": -0.4566,
+      "directional_accuracy": 51.69,
+      "directional_precision": 0.5536,
+      "directional_recall": 0.3669,
+      "directional_f1": 0.4413,
+      "sample_count": 325,
+      "ticker": "GODREJCP",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.026974,
+      "rmse": 0.03493,
+      "r2": -0.9473,
+      "directional_accuracy": 51.55,
+      "directional_precision": 0.5608,
+      "directional_recall": 0.7647,
+      "directional_f1": 0.6471,
+      "sample_count": 322,
+      "ticker": "GODREJCP",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\GODREJCP_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:19:53.798889+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

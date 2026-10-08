@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_412edf59d6",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "NYKAA",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2022-01-20 00:00:00",
+  "training_end": "2023-05-30 00:00:00",
+  "validation_start": "2023-05-31 00:00:00",
+  "validation_end": "2023-09-08 00:00:00",
+  "test_start": "2023-09-11 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:24:38.206981+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.029425,
+      "rmse": 0.035616,
+      "r2": -1.8387,
+      "directional_accuracy": 49.3,
+      "directional_precision": 0.3333,
+      "directional_recall": 0.0286,
+      "directional_f1": 0.0526,
+      "sample_count": 71,
+      "ticker": "NYKAA",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.037125,
+      "rmse": 0.042778,
+      "r2": -3.3546,
+      "directional_accuracy": 45.21,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 73,
+      "ticker": "NYKAA",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\NYKAA_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:24:38.206981+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

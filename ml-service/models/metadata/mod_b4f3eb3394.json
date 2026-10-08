@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_b4f3eb3394",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "INFY",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-11-30 00:00:00",
+  "training_timestamp": "2026-10-05T19:18:12.843163+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 10,
+    "patience": 3,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.064623,
+      "rmse": 0.080291,
+      "r2": -0.2036,
+      "directional_accuracy": 48.92,
+      "directional_precision": 0.5286,
+      "directional_recall": 0.6704,
+      "directional_f1": 0.5911,
+      "sample_count": 325,
+      "ticker": "INFY",
+      "model_name": "lstm",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.052816,
+      "rmse": 0.065919,
+      "r2": -0.0672,
+      "directional_accuracy": 63.52,
+      "directional_precision": 0.6286,
+      "directional_recall": 0.9565,
+      "directional_f1": 0.7586,
+      "sample_count": 307,
+      "ticker": "INFY",
+      "model_name": "lstm",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\INFY_target_return_20d_h20_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:18:12.843163+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\INFY_target_return_20d_h20_lstm_scaler.joblib",
+  "sequence_length": 30
+}

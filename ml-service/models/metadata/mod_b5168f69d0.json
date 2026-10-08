@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_b5168f69d0",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "PAYTM",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2022-01-31 00:00:00",
+  "training_end": "2023-06-01 00:00:00",
+  "validation_start": "2023-06-02 00:00:00",
+  "validation_end": "2023-09-11 00:00:00",
+  "test_start": "2023-09-12 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:25:11.457096+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.058914,
+      "rmse": 0.077408,
+      "r2": -0.0756,
+      "directional_accuracy": 40.0,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 70,
+      "ticker": "PAYTM",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.133347,
+      "rmse": 0.174996,
+      "r2": -0.2956,
+      "directional_accuracy": 66.04,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 53,
+      "ticker": "PAYTM",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\PAYTM_target_return_20d_h20_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:25:11.457096+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

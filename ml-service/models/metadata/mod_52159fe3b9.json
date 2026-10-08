@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_52159fe3b9",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "ICICIGI",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2017-12-08 00:00:00",
+  "training_end": "2022-03-04 00:00:00",
+  "validation_start": "2022-03-07 00:00:00",
+  "validation_end": "2023-01-27 00:00:00",
+  "test_start": "2023-01-30 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:49:37.996118+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.051017,
+      "rmse": 0.061921,
+      "r2": 0.2113,
+      "directional_accuracy": 67.86,
+      "directional_precision": 0.6596,
+      "directional_recall": 0.6078,
+      "directional_f1": 0.6327,
+      "sample_count": 224,
+      "ticker": "ICICIGI",
+      "model_name": "lstm",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.056941,
+      "rmse": 0.066825,
+      "r2": -0.4631,
+      "directional_accuracy": 51.94,
+      "directional_precision": 0.6444,
+      "directional_recall": 0.464,
+      "directional_f1": 0.5395,
+      "sample_count": 206,
+      "ticker": "ICICIGI",
+      "model_name": "lstm",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ICICIGI_target_return_20d_h20_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T19:49:37.996118+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\ICICIGI_target_return_20d_h20_lstm_scaler.joblib",
+  "sequence_length": 30
+}

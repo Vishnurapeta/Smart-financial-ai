@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_adab31831c",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "JUBLFOOD",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:30.267615+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.018238,
+      "rmse": 0.025314,
+      "r2": -0.0373,
+      "directional_accuracy": 55.69,
+      "directional_precision": 0.5634,
+      "directional_recall": 0.4938,
+      "directional_f1": 0.5263,
+      "sample_count": 325,
+      "ticker": "JUBLFOOD",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.011649,
+      "rmse": 0.015917,
+      "r2": -0.0008,
+      "directional_accuracy": 55.52,
+      "directional_precision": 0.5329,
+      "directional_recall": 0.5705,
+      "directional_f1": 0.5511,
+      "sample_count": 326,
+      "ticker": "JUBLFOOD",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\JUBLFOOD_target_next_return_h1_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:22:30.267615+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_5cda0cd630",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "HDFCLIFE",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2018-01-30 00:00:00",
+  "training_end": "2022-03-21 00:00:00",
+  "validation_start": "2022-03-22 00:00:00",
+  "validation_end": "2023-02-03 00:00:00",
+  "test_start": "2023-02-06 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:20:44.781243+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.059137,
+      "rmse": 0.079365,
+      "r2": -0.1526,
+      "directional_accuracy": 60.73,
+      "directional_precision": 0.5801,
+      "directional_recall": 0.913,
+      "directional_f1": 0.7095,
+      "sample_count": 219,
+      "ticker": "HDFCLIFE",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.057345,
+      "rmse": 0.069082,
+      "r2": -0.2175,
+      "directional_accuracy": 58.21,
+      "directional_precision": 0.7064,
+      "directional_recall": 0.5969,
+      "directional_f1": 0.6471,
+      "sample_count": 201,
+      "ticker": "HDFCLIFE",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\HDFCLIFE_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:20:44.781243+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

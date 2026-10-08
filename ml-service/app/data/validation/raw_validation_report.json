@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-27T07:42:46.978860+00:00",
+  "total_rows_inspected": 219800,
+  "valid_rows": 217579,
+  "removed_rows_total": 2221,
+  "removal_breakdown": {
+    "duplicate_symbol_date": {
+      "count": 2221,
+      "percentage": 1.0105,
+      "reason": "Duplicate records sharing identical ticker and date"
+    }
+  },
+  "tickers_found_count": 106,
+  "tickers_retained_count": 106,
+  "tickers_dropped_count": 0,
+  "tickers_dropped_list": [],
+  "date_min": "2015-01-01",
+  "date_max": "2023-12-29",
+  "duplicate_ticker_dates_count": 4442,
+  "unsorted_tickers_count": 1,
+  "nan_inf_features_count": 0,
+  "is_valid": true,
+  "warnings": [
+    "Identified 4442 rows with duplicate (symbol, date) combinations.",
+    "1 tickers have unsorted or disordered historical dates in the raw data."
+  ],
+  "errors": []
+}

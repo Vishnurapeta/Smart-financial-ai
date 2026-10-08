@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_830881ff3f",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "BOSCHLTD",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:18:10.575020+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.07039,
+      "rmse": 0.092201,
+      "r2": -0.2558,
+      "directional_accuracy": 51.38,
+      "directional_precision": 0.52,
+      "directional_recall": 0.1625,
+      "directional_f1": 0.2476,
+      "sample_count": 325,
+      "ticker": "BOSCHLTD",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.048099,
+      "rmse": 0.059156,
+      "r2": -0.7316,
+      "directional_accuracy": 34.2,
+      "directional_precision": 0.9091,
+      "directional_recall": 0.0474,
+      "directional_f1": 0.0901,
+      "sample_count": 307,
+      "ticker": "BOSCHLTD",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\BOSCHLTD_target_return_20d_h20_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:18:10.575020+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_72b787fdff",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "IRCTC",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-12-26 00:00:00",
+  "training_end": "2022-10-12 00:00:00",
+  "validation_start": "2022-10-13 00:00:00",
+  "validation_end": "2023-05-22 00:00:00",
+  "test_start": "2023-05-23 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:35:24.706999+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.012409,
+      "rmse": 0.016246,
+      "r2": -0.5325,
+      "directional_accuracy": 53.69,
+      "directional_precision": 0.6333,
+      "directional_recall": 0.4471,
+      "directional_f1": 0.5241,
+      "sample_count": 149,
+      "ticker": "IRCTC",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.015215,
+      "rmse": 0.018569,
+      "r2": -0.6614,
+      "directional_accuracy": 51.06,
+      "directional_precision": 0.4925,
+      "directional_recall": 0.4853,
+      "directional_f1": 0.4889,
+      "sample_count": 141,
+      "ticker": "IRCTC",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IRCTC_target_next_return_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:35:24.706999+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\IRCTC_target_next_return_h1_lstm_scaler.joblib",
+  "sequence_length": 30
+}

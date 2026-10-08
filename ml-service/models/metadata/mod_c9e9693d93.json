@@ -1,0 +1,65 @@
+{
+  "model_id": "mod_c9e9693d93",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "INFY",
+  "target": "target_next_close",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-09-27T08:51:58.084622+00:00",
+  "hyperparameters": {
+    "task_type": "price",
+    "strategy": "current_close"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 19.7975,
+      "rmse": 25.7921,
+      "mape": 1.2105,
+      "r2": 0.9689,
+      "sample_count": 325,
+      "ticker": "INFY",
+      "model_name": "naive",
+      "target": "target_next_close",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 15.1979,
+      "rmse": 21.5076,
+      "mape": 1.0536,
+      "r2": 0.9553,
+      "sample_count": 326,
+      "ticker": "INFY",
+      "model_name": "naive",
+      "target": "target_next_close",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\INFY_target_next_close_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "EXPERIMENTAL",
+      "timestamp": "2026-09-27T08:51:58.084622+00:00",
+      "reason": "Initial registration"
+    },
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-09-27T08:52:05.571768+00:00",
+      "reason": "Candidate Selection Rationale for INFY (price prediction):\n- Primary Metric: RMSE (Optimization: MIN)\n- Validation Score: 25.7921\n- Naive baseline performed best among tested models on the validation split. No ML model justified replacing the baseline.\n- Selected Model: naive (ID: mod_c9e9693d93)"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:16:14.198978+00:00",
+      "reason": "Tested and approved for production"
+    }
+  ]
+}

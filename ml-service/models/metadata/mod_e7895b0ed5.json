@@ -1,0 +1,71 @@
+{
+  "model_id": "mod_e7895b0ed5",
+  "model_name": "XGBoost",
+  "model_version": "1.0.0",
+  "ticker": "IRFC",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2021-04-15 00:00:00",
+  "training_end": "2023-03-01 00:00:00",
+  "validation_start": "2023-03-02 00:00:00",
+  "validation_end": "2023-07-28 00:00:00",
+  "test_start": "2023-07-31 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:08.659138+00:00",
+  "hyperparameters": {
+    "n_estimators": 40,
+    "max_depth": 4,
+    "learning_rate": 0.06,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3.0,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "early_stopping_rounds": 15
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.013388,
+      "rmse": 0.020997,
+      "r2": -0.0003,
+      "directional_accuracy": 58.0,
+      "directional_precision": 0.6061,
+      "directional_recall": 0.4082,
+      "directional_f1": 0.4878,
+      "sample_count": 100,
+      "ticker": "IRFC",
+      "model_name": "xgboost",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.025798,
+      "rmse": 0.04187,
+      "r2": -0.0696,
+      "directional_accuracy": 39.22,
+      "directional_precision": 0.4151,
+      "directional_recall": 0.4151,
+      "directional_f1": 0.4151,
+      "sample_count": 102,
+      "ticker": "IRFC",
+      "model_name": "xgboost",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IRFC_target_next_return_h1_xgboost_xgboost.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:22:08.659138+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

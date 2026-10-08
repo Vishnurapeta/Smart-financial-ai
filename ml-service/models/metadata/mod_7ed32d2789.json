@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_7ed32d2789",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "PFC",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:25:30.514467+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.058565,
+      "rmse": 0.071298,
+      "r2": -0.138,
+      "directional_accuracy": 58.77,
+      "directional_precision": 0.6081,
+      "directional_recall": 0.3,
+      "directional_f1": 0.4018,
+      "sample_count": 325,
+      "ticker": "PFC",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.211176,
+      "rmse": 0.247658,
+      "r2": -3.656,
+      "directional_accuracy": 16.61,
+      "directional_precision": 0.3333,
+      "directional_recall": 0.0079,
+      "directional_f1": 0.0154,
+      "sample_count": 307,
+      "ticker": "PFC",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\PFC_target_return_20d_h20_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:25:30.514467+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

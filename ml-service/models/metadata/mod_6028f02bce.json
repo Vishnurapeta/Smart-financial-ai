@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_6028f02bce",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "AAPL",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2024-12-13 14:30:00+00:00",
+  "training_end": "2026-03-19 13:30:00+00:00",
+  "validation_start": "2026-03-20 13:30:00+00:00",
+  "validation_end": "2026-06-25 13:30:00+00:00",
+  "test_start": "2026-06-26 13:30:00+00:00",
+  "test_end": "2026-09-25 13:30:00+00:00",
+  "training_timestamp": "2026-10-05T09:33:31.290931+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.058486,
+      "rmse": 0.065933,
+      "r2": -2.77,
+      "directional_accuracy": 25.37,
+      "directional_precision": 0.3333,
+      "directional_recall": 0.0638,
+      "directional_f1": 0.1071,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.043053,
+      "rmse": 0.053803,
+      "r2": -0.8024,
+      "directional_accuracy": 56.25,
+      "directional_precision": 0.6512,
+      "directional_recall": 0.6829,
+      "directional_f1": 0.6667,
+      "sample_count": 64,
+      "ticker": "AAPL",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\AAPL_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T09:33:31.290931+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

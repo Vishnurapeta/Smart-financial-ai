@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_52ce1e29c4",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "DIXON",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2017-11-29 00:00:00",
+  "training_end": "2022-03-02 00:00:00",
+  "validation_start": "2022-03-03 00:00:00",
+  "validation_end": "2023-01-25 00:00:00",
+  "test_start": "2023-01-27 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:19:06.412742+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.04648,
+      "rmse": 0.064512,
+      "r2": -0.2063,
+      "directional_accuracy": 48.89,
+      "directional_precision": 0.4656,
+      "directional_recall": 0.5755,
+      "directional_f1": 0.5148,
+      "sample_count": 225,
+      "ticker": "DIXON",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.060908,
+      "rmse": 0.082179,
+      "r2": -1.4262,
+      "directional_accuracy": 40.99,
+      "directional_precision": 0.5686,
+      "directional_recall": 0.2101,
+      "directional_f1": 0.3069,
+      "sample_count": 222,
+      "ticker": "DIXON",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\DIXON_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:19:06.412742+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

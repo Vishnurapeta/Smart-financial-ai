@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_43c7925ce9",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "HEROMOTOCO",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:20:49.990208+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.027351,
+      "rmse": 0.03676,
+      "r2": 0.0361,
+      "directional_accuracy": 62.46,
+      "directional_precision": 0.6709,
+      "directional_recall": 0.6023,
+      "directional_f1": 0.6347,
+      "sample_count": 325,
+      "ticker": "HEROMOTOCO",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.027692,
+      "rmse": 0.036854,
+      "r2": -0.1388,
+      "directional_accuracy": 55.28,
+      "directional_precision": 0.5871,
+      "directional_recall": 0.6592,
+      "directional_f1": 0.6211,
+      "sample_count": 322,
+      "ticker": "HEROMOTOCO",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\HEROMOTOCO_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:20:49.990208+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

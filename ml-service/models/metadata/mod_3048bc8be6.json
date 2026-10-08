@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_3048bc8be6",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "NESTLEIND",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:24:25.913811+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.047199,
+      "rmse": 0.059269,
+      "r2": -0.2602,
+      "directional_accuracy": 50.77,
+      "directional_precision": 0.5344,
+      "directional_recall": 0.5838,
+      "directional_f1": 0.558,
+      "sample_count": 325,
+      "ticker": "NESTLEIND",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.050363,
+      "rmse": 0.062278,
+      "r2": -0.9457,
+      "directional_accuracy": 51.14,
+      "directional_precision": 0.7262,
+      "directional_recall": 0.3245,
+      "directional_f1": 0.4485,
+      "sample_count": 307,
+      "ticker": "NESTLEIND",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\NESTLEIND_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:24:25.913811+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

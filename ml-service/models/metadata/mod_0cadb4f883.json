@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_0cadb4f883",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "METROPOLIS",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-07-01 00:00:00",
+  "training_end": "2022-08-19 00:00:00",
+  "validation_start": "2022-08-22 00:00:00",
+  "validation_end": "2023-04-25 00:00:00",
+  "test_start": "2023-04-26 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:23:52.718721+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.037266,
+      "rmse": 0.047081,
+      "r2": -0.003,
+      "directional_accuracy": 47.9,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 167,
+      "ticker": "METROPOLIS",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.033349,
+      "rmse": 0.041842,
+      "r2": -0.0633,
+      "directional_accuracy": 40.85,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 164,
+      "ticker": "METROPOLIS",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\METROPOLIS_target_return_5d_h5_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:23:52.718721+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

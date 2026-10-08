@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_ee15cfe945",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "IRCTC",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-12-26 00:00:00",
+  "training_end": "2022-10-12 00:00:00",
+  "validation_start": "2022-10-13 00:00:00",
+  "validation_end": "2023-05-22 00:00:00",
+  "test_start": "2023-05-23 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:02.345906+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.022329,
+      "rmse": 0.030876,
+      "r2": -0.0231,
+      "directional_accuracy": 48.32,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 149,
+      "ticker": "IRCTC",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.027949,
+      "rmse": 0.038365,
+      "r2": -0.1077,
+      "directional_accuracy": 39.73,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 146,
+      "ticker": "IRCTC",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IRCTC_target_return_5d_h5_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:22:02.345906+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

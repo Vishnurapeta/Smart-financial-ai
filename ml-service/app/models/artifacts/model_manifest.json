@@ -1,0 +1,35 @@
+{
+  "model_name": "transaction_category_tfidf_logreg",
+  "version": "1.0.0",
+  "framework": "scikit-learn",
+  "training_samples": 201,
+  "num_classes": 15,
+  "accuracy": 1.0,
+  "classes": [
+    "dining-restaurants",
+    "dividends",
+    "education-learning",
+    "entertainment-leisure",
+    "freelance-consulting",
+    "groceries",
+    "healthcare-medical",
+    "housing-rent",
+    "investment-income",
+    "salary-wages",
+    "shopping-retail",
+    "subscriptions-software",
+    "transportation-fuel",
+    "travel-vacation",
+    "utilities-bills"
+  ],
+  "hyperparameters": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "C": 2.5,
+    "solver": "lbfgs",
+    "max_iter": 1000
+  }
+}

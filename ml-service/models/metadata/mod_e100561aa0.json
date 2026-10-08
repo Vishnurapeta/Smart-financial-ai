@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_e100561aa0",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "DIXON",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2017-11-29 00:00:00",
+  "training_end": "2022-03-02 00:00:00",
+  "validation_start": "2022-03-03 00:00:00",
+  "validation_end": "2023-01-25 00:00:00",
+  "test_start": "2023-01-27 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:19:04.741213+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.018047,
+      "rmse": 0.026627,
+      "r2": -0.1414,
+      "directional_accuracy": 49.78,
+      "directional_precision": 0.4877,
+      "directional_recall": 0.7248,
+      "directional_f1": 0.583,
+      "sample_count": 225,
+      "ticker": "DIXON",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.01764,
+      "rmse": 0.023496,
+      "r2": -0.4209,
+      "directional_accuracy": 46.46,
+      "directional_precision": 0.5283,
+      "directional_recall": 0.4409,
+      "directional_f1": 0.4807,
+      "sample_count": 226,
+      "ticker": "DIXON",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\DIXON_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:19:04.741213+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

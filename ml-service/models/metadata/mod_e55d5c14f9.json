@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_e55d5c14f9",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "HAL",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2018-06-12 00:00:00",
+  "training_end": "2022-04-29 00:00:00",
+  "validation_start": "2022-05-02 00:00:00",
+  "validation_end": "2023-02-22 00:00:00",
+  "test_start": "2023-02-23 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:20:09.245322+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.120633,
+      "rmse": 0.145554,
+      "r2": -1.1774,
+      "directional_accuracy": 61.46,
+      "directional_precision": 0.7455,
+      "directional_recall": 0.6165,
+      "directional_f1": 0.6749,
+      "sample_count": 205,
+      "ticker": "HAL",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.279557,
+      "rmse": 0.329887,
+      "r2": -8.0301,
+      "directional_accuracy": 35.11,
+      "directional_precision": 0.6,
+      "directional_recall": 0.4043,
+      "directional_f1": 0.4831,
+      "sample_count": 188,
+      "ticker": "HAL",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\HAL_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:20:09.245322+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_f71a4582de",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "UNIONBANK",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:30:15.049041+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.081694,
+      "rmse": 0.113828,
+      "r2": 0.0633,
+      "directional_accuracy": 64.92,
+      "directional_precision": 0.6623,
+      "directional_recall": 0.6135,
+      "directional_f1": 0.6369,
+      "sample_count": 325,
+      "ticker": "UNIONBANK",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.167042,
+      "rmse": 0.224225,
+      "r2": -0.911,
+      "directional_accuracy": 41.69,
+      "directional_precision": 0.7083,
+      "directional_recall": 0.0899,
+      "directional_f1": 0.1596,
+      "sample_count": 307,
+      "ticker": "UNIONBANK",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\UNIONBANK_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:30:15.049041+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

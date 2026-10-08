@@ -1,0 +1,56 @@
+{
+  "model_id": "mod_72ef0abb01",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "INFY",
+  "target": "target_next_close",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-09-27T08:51:59.200048+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 20.4698,
+      "rmse": 26.6674,
+      "mape": 1.2504,
+      "r2": 0.9667,
+      "sample_count": 325,
+      "ticker": "INFY",
+      "model_name": "linear_regression",
+      "target": "target_next_close",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 16.2,
+      "rmse": 22.4972,
+      "mape": 1.1267,
+      "r2": 0.9511,
+      "sample_count": 326,
+      "ticker": "INFY",
+      "model_name": "linear_regression",
+      "target": "target_next_close",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\INFY_target_next_close_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "EXPERIMENTAL",
+  "status_history": [
+    {
+      "status": "EXPERIMENTAL",
+      "timestamp": "2026-09-27T08:51:59.200048+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_4c55ed9e69",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "MARUTI",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:23:35.692710+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.031474,
+      "rmse": 0.043501,
+      "r2": -0.067,
+      "directional_accuracy": 54.15,
+      "directional_precision": 0.7727,
+      "directional_recall": 0.1965,
+      "directional_f1": 0.3134,
+      "sample_count": 325,
+      "ticker": "MARUTI",
+      "model_name": "random_forest",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.020277,
+      "rmse": 0.025851,
+      "r2": -0.0425,
+      "directional_accuracy": 50.0,
+      "directional_precision": 0.5326,
+      "directional_recall": 0.2934,
+      "directional_f1": 0.3784,
+      "sample_count": 322,
+      "ticker": "MARUTI",
+      "model_name": "random_forest",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\MARUTI_target_return_5d_h5_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:23:35.692710+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

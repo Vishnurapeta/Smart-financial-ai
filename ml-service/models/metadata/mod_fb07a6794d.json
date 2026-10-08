@@ -1,0 +1,57 @@
+{
+  "model_id": "mod_fb07a6794d",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "RELIANCE",
+  "target": "target_close_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-21 00:00:00",
+  "training_timestamp": "2026-10-05T19:16:41.750178+00:00",
+  "hyperparameters": {
+    "task_type": "price",
+    "strategy": "current_close"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 33.6398,
+      "rmse": 43.1661,
+      "mape": 2.9799,
+      "r2": 0.7633,
+      "sample_count": 325,
+      "ticker": "RELIANCE",
+      "model_name": "naive",
+      "target": "target_close_5d",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 25.2119,
+      "rmse": 30.9335,
+      "mape": 2.1627,
+      "r2": 0.7658,
+      "sample_count": 322,
+      "ticker": "RELIANCE",
+      "model_name": "naive",
+      "target": "target_close_5d",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\RELIANCE_target_close_5d_h5_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:16:41.750178+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_fbdf98cf70",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "LTIM",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-10-04 00:00:00",
+  "training_end": "2021-10-26 00:00:00",
+  "validation_start": "2021-10-27 00:00:00",
+  "validation_end": "2022-11-24 00:00:00",
+  "test_start": "2022-11-25 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:23:14.245523+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.172303,
+      "rmse": 0.21897,
+      "r2": -3.0128,
+      "directional_accuracy": 55.22,
+      "directional_precision": 0.4911,
+      "directional_recall": 0.9483,
+      "directional_f1": 0.6471,
+      "sample_count": 268,
+      "ticker": "LTIM",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.070273,
+      "rmse": 0.09047,
+      "r2": -0.8642,
+      "directional_accuracy": 64.0,
+      "directional_precision": 0.6345,
+      "directional_recall": 0.9805,
+      "directional_f1": 0.7704,
+      "sample_count": 250,
+      "ticker": "LTIM",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\LTIM_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:23:14.245523+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "model_id": "mod_14ddf5520f",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "RELIANCE",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:26:36.171222+00:00",
+  "hyperparameters": {
+    "sequence_length": 5,
+    "hidden_size": 16,
+    "num_layers": 1,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "batch_size": 64,
+    "epochs": 3,
+    "patience": 5,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.029181,
+      "rmse": 0.038357,
+      "r2": -4.077,
+      "directional_accuracy": 55.38,
+      "directional_precision": 0.5781,
+      "directional_recall": 0.6343,
+      "directional_f1": 0.6049,
+      "sample_count": 325,
+      "ticker": "RELIANCE",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.022591,
+      "rmse": 0.02777,
+      "r2": -5.0126,
+      "directional_accuracy": 50.61,
+      "directional_precision": 0.5316,
+      "directional_recall": 0.253,
+      "directional_f1": 0.3429,
+      "sample_count": 326,
+      "ticker": "RELIANCE",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\RELIANCE_target_next_return_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:26:36.171222+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

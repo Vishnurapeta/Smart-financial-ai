@@ -1,0 +1,60 @@
+{
+  "model_id": "mod_28141e0e60",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "TCS",
+  "target": "target_close_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-11-30 00:00:00",
+  "training_timestamp": "2026-10-05T09:32:37.900219+00:00",
+  "hyperparameters": {
+    "n_estimators": 40,
+    "max_depth": 6,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 424.877,
+      "rmse": 495.1034,
+      "mape": 11.7451,
+      "r2": -2.9494,
+      "sample_count": 325,
+      "ticker": "TCS",
+      "model_name": "random_forest",
+      "target": "target_close_20d",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 287.9021,
+      "rmse": 335.1921,
+      "mape": 8.3493,
+      "r2": -3.3734,
+      "sample_count": 307,
+      "ticker": "TCS",
+      "model_name": "random_forest",
+      "target": "target_close_20d",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\TCS_target_close_20d_h20_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T09:32:37.900219+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

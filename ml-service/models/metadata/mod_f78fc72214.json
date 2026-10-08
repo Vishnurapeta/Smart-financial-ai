@@ -1,0 +1,177 @@
+{
+  "model_id": "mod_f78fc72214",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "RELIANCE",
+  "target": "target_next_close",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-09-27T08:43:29.647889+00:00",
+  "hyperparameters": {
+    "task_type": "price",
+    "strategy": "current_close"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 14.3935,
+      "rmse": 19.2443,
+      "mape": 1.2802,
+      "r2": 0.9554,
+      "sample_count": 325,
+      "ticker": "RELIANCE",
+      "model_name": "naive",
+      "target": "target_next_close",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 9.998,
+      "rmse": 13.1186,
+      "mape": 0.8595,
+      "r2": 0.9574,
+      "sample_count": 326,
+      "ticker": "RELIANCE",
+      "model_name": "naive",
+      "target": "target_next_close",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\RELIANCE_target_next_close_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "EXPERIMENTAL",
+      "timestamp": "2026-09-27T08:43:29.647889+00:00",
+      "reason": "Initial registration"
+    },
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-09-27T08:43:34.574451+00:00",
+      "reason": "Candidate Selection Rationale for RELIANCE (price prediction):\n- Primary Metric: RMSE (Optimization: MIN)\n- Validation Score: 19.2443\n- Naive baseline performed best among tested models on the validation split. No ML model justified replacing the baseline.\n- Selected Model: naive (ID: mod_f78fc72214)"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:19:11.599328+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:19:32.233073+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:25:09.489382+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:26:41.118727+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:55:16.143747+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T10:04:31.129340+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T10:16:55.544876+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T13:46:19.898563+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T14:10:57.054279+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T16:29:18.769508+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T16:53:50.264224+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T16:56:03.622692+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T17:16:18.327510+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T09:44:24.018991+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T09:46:01.647185+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T17:09:26.524738+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T17:22:42.085896+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T17:45:43.994557+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T17:46:34.480616+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:43:34.403897+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T20:13:06.077310+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T20:16:05.824290+00:00",
+      "reason": "Tested and approved for production"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T20:16:51.088659+00:00",
+      "reason": "Tested and approved for production"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

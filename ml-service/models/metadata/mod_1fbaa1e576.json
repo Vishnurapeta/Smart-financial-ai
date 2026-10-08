@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_1fbaa1e576",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "LALPATHLAB",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-03-04 00:00:00",
+  "training_end": "2021-08-26 00:00:00",
+  "validation_start": "2021-08-27 00:00:00",
+  "validation_end": "2022-10-25 00:00:00",
+  "test_start": "2022-10-27 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:52.926529+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.020208,
+      "rmse": 0.026874,
+      "r2": -0.1273,
+      "directional_accuracy": 50.17,
+      "directional_precision": 0.4676,
+      "directional_recall": 0.4815,
+      "directional_f1": 0.4745,
+      "sample_count": 289,
+      "ticker": "LALPATHLAB",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.014284,
+      "rmse": 0.019327,
+      "r2": -0.089,
+      "directional_accuracy": 52.41,
+      "directional_precision": 0.524,
+      "directional_recall": 0.8054,
+      "directional_f1": 0.6349,
+      "sample_count": 290,
+      "ticker": "LALPATHLAB",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\LALPATHLAB_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:22:52.926529+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

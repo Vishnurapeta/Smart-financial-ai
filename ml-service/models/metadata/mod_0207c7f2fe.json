@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_0207c7f2fe",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "IRCTC",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-12-26 00:00:00",
+  "training_end": "2022-10-12 00:00:00",
+  "validation_start": "2022-10-13 00:00:00",
+  "validation_end": "2023-05-22 00:00:00",
+  "test_start": "2023-05-23 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:05.148363+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.080237,
+      "rmse": 0.104873,
+      "r2": -2.484,
+      "directional_accuracy": 61.74,
+      "directional_precision": 0.4773,
+      "directional_recall": 0.3818,
+      "directional_f1": 0.4242,
+      "sample_count": 149,
+      "ticker": "IRCTC",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.113726,
+      "rmse": 0.134958,
+      "r2": -2.2133,
+      "directional_accuracy": 30.53,
+      "directional_precision": 0.46,
+      "directional_recall": 0.2644,
+      "directional_f1": 0.3358,
+      "sample_count": 131,
+      "ticker": "IRCTC",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IRCTC_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:22:05.148363+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

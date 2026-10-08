@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_5bc015b4b7",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "DIXON",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2017-11-29 00:00:00",
+  "training_end": "2022-03-02 00:00:00",
+  "validation_start": "2022-03-03 00:00:00",
+  "validation_end": "2023-01-25 00:00:00",
+  "test_start": "2023-01-27 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:19:06.136558+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.042607,
+      "rmse": 0.059187,
+      "r2": -0.0154,
+      "directional_accuracy": 52.89,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 225,
+      "ticker": "DIXON",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.040267,
+      "rmse": 0.056782,
+      "r2": -0.1583,
+      "directional_accuracy": 37.84,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 222,
+      "ticker": "DIXON",
+      "model_name": "naive",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\DIXON_target_return_5d_h5_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:19:06.136558+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

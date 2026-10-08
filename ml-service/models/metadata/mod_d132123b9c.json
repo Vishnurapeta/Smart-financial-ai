@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_d132123b9c",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "IRCTC",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-12-26 00:00:00",
+  "training_end": "2022-10-12 00:00:00",
+  "validation_start": "2022-10-13 00:00:00",
+  "validation_end": "2023-05-22 00:00:00",
+  "test_start": "2023-05-23 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:02.783814+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.032006,
+      "rmse": 0.040684,
+      "r2": -0.7763,
+      "directional_accuracy": 55.7,
+      "directional_precision": 0.5604,
+      "directional_recall": 0.6623,
+      "directional_f1": 0.6071,
+      "sample_count": 149,
+      "ticker": "IRCTC",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.035914,
+      "rmse": 0.046487,
+      "r2": -0.6263,
+      "directional_accuracy": 49.32,
+      "directional_precision": 0.6094,
+      "directional_recall": 0.4432,
+      "directional_f1": 0.5132,
+      "sample_count": 146,
+      "ticker": "IRCTC",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IRCTC_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:22:02.783814+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

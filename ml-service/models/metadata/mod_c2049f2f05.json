@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_c2049f2f05",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "RELIANCE",
+  "target": "target_next_close",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:57:33.295919+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 10,
+    "patience": 3,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 1098.73,
+      "rmse": 1102.4982,
+      "mape": 98.3156,
+      "r2": -145.5425,
+      "sample_count": 325,
+      "ticker": "RELIANCE",
+      "model_name": "lstm",
+      "target": "target_next_close",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 1148.1155,
+      "rmse": 1149.8755,
+      "mape": 98.3932,
+      "r2": -325.9212,
+      "sample_count": 326,
+      "ticker": "RELIANCE",
+      "model_name": "lstm",
+      "target": "target_next_close",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\RELIANCE_target_next_close_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:57:33.295919+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\RELIANCE_target_next_close_h1_lstm_scaler.joblib",
+  "sequence_length": 30
+}

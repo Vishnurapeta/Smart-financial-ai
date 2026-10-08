@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_05c38ccc41",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "KPITTECH",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2019-07-04 00:00:00",
+  "training_end": "2022-08-22 00:00:00",
+  "validation_start": "2022-08-23 00:00:00",
+  "validation_end": "2023-04-25 00:00:00",
+  "test_start": "2023-04-26 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:50.917452+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.166808,
+      "rmse": 0.177053,
+      "r2": -4.9341,
+      "directional_accuracy": 24.7,
+      "directional_precision": 1.0,
+      "directional_recall": 0.0234,
+      "directional_f1": 0.0458,
+      "sample_count": 166,
+      "ticker": "KPITTECH",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.195454,
+      "rmse": 0.216887,
+      "r2": -4.1069,
+      "directional_accuracy": 23.49,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 149,
+      "ticker": "KPITTECH",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\KPITTECH_target_return_20d_h20_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:22:50.917452+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

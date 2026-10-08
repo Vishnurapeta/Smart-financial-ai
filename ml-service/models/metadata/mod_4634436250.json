@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_4634436250",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "HCLTECH",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:20:22.715046+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.106588,
+      "rmse": 0.127547,
+      "r2": -1.7219,
+      "directional_accuracy": 47.38,
+      "directional_precision": 0.4424,
+      "directional_recall": 0.6575,
+      "directional_f1": 0.5289,
+      "sample_count": 325,
+      "ticker": "HCLTECH",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.053472,
+      "rmse": 0.064486,
+      "r2": -0.3531,
+      "directional_accuracy": 64.82,
+      "directional_precision": 0.7566,
+      "directional_recall": 0.6976,
+      "directional_f1": 0.7259,
+      "sample_count": 307,
+      "ticker": "HCLTECH",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\HCLTECH_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:20:22.715046+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

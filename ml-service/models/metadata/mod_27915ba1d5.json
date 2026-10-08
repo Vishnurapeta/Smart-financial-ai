@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_27915ba1d5",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "ADANIENT",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:16:12.875492+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.094714,
+      "rmse": 0.124506,
+      "r2": -0.3494,
+      "directional_accuracy": 31.08,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 325,
+      "ticker": "ADANIENT",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.130926,
+      "rmse": 0.194934,
+      "r2": -0.0019,
+      "directional_accuracy": 49.84,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 307,
+      "ticker": "ADANIENT",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ADANIENT_target_return_20d_h20_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:16:12.875492+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

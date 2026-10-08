@@ -1,0 +1,68 @@
+{
+  "model_id": "mod_6a6f53c756",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "NYKAA",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2022-01-20 00:00:00",
+  "training_end": "2023-05-30 00:00:00",
+  "validation_start": "2023-05-31 00:00:00",
+  "validation_end": "2023-09-08 00:00:00",
+  "test_start": "2023-09-11 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:24:38.921988+00:00",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_depth": 5,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.014746,
+      "rmse": 0.021701,
+      "r2": -0.0538,
+      "directional_accuracy": 53.52,
+      "directional_precision": 0.6667,
+      "directional_recall": 0.1143,
+      "directional_f1": 0.1951,
+      "sample_count": 71,
+      "ticker": "NYKAA",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.015099,
+      "rmse": 0.021253,
+      "r2": -0.0748,
+      "directional_accuracy": 47.95,
+      "directional_precision": 1.0,
+      "directional_recall": 0.05,
+      "directional_f1": 0.0952,
+      "sample_count": 73,
+      "ticker": "NYKAA",
+      "model_name": "random_forest",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\NYKAA_target_next_return_h1_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:24:38.921988+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

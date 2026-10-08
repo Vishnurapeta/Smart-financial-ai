@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_6d6cd8a143",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "MAXHEALTH",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2020-11-02 00:00:00",
+  "training_end": "2023-01-12 00:00:00",
+  "validation_start": "2023-01-13 00:00:00",
+  "validation_end": "2023-07-06 00:00:00",
+  "test_start": "2023-07-07 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:52:19.465893+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.037375,
+      "rmse": 0.046308,
+      "r2": -0.1387,
+      "directional_accuracy": 51.28,
+      "directional_precision": 0.5732,
+      "directional_recall": 0.6812,
+      "directional_f1": 0.6225,
+      "sample_count": 117,
+      "ticker": "MAXHEALTH",
+      "model_name": "lstm",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.039869,
+      "rmse": 0.049943,
+      "r2": -0.1783,
+      "directional_accuracy": 59.63,
+      "directional_precision": 0.7857,
+      "directional_recall": 0.3667,
+      "directional_f1": 0.5,
+      "sample_count": 109,
+      "ticker": "MAXHEALTH",
+      "model_name": "lstm",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\MAXHEALTH_target_return_5d_h5_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:52:19.465893+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\MAXHEALTH_target_return_5d_h5_lstm_scaler.joblib",
+  "sequence_length": 30
+}

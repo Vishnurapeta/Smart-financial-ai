@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_0dc4c79b74",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "ALKEM",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-03-04 00:00:00",
+  "training_end": "2021-08-26 00:00:00",
+  "validation_start": "2021-08-27 00:00:00",
+  "validation_end": "2022-10-25 00:00:00",
+  "test_start": "2022-10-27 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:57:50.042533+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.059608,
+      "rmse": 0.073198,
+      "r2": -0.2483,
+      "directional_accuracy": 51.21,
+      "directional_precision": 0.4615,
+      "directional_recall": 0.768,
+      "directional_f1": 0.5766,
+      "sample_count": 289,
+      "ticker": "ALKEM",
+      "model_name": "lstm",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.052044,
+      "rmse": 0.068799,
+      "r2": 0.3099,
+      "directional_accuracy": 78.97,
+      "directional_precision": 0.7376,
+      "directional_recall": 0.9739,
+      "directional_f1": 0.8394,
+      "sample_count": 271,
+      "ticker": "ALKEM",
+      "model_name": "lstm",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ALKEM_target_return_20d_h20_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T19:57:50.042533+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\ALKEM_target_return_20d_h20_lstm_scaler.joblib",
+  "sequence_length": 30
+}

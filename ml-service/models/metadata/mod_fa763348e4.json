@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_fa763348e4",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TATACONSUM",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:27:46.546781+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.19018,
+      "rmse": 0.222123,
+      "r2": -8.4258,
+      "directional_accuracy": 52.0,
+      "directional_precision": 0.5358,
+      "directional_recall": 0.887,
+      "directional_f1": 0.6681,
+      "sample_count": 325,
+      "ticker": "TATACONSUM",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.172519,
+      "rmse": 0.198366,
+      "r2": -16.6751,
+      "directional_accuracy": 61.56,
+      "directional_precision": 0.6139,
+      "directional_recall": 0.9947,
+      "directional_f1": 0.7592,
+      "sample_count": 307,
+      "ticker": "TATACONSUM",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TATACONSUM_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:27:46.546781+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_9745487b73",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "AAPL",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2024-12-13 14:30:00+00:00",
+  "training_end": "2026-03-19 13:30:00+00:00",
+  "validation_start": "2026-03-20 13:30:00+00:00",
+  "validation_end": "2026-06-25 13:30:00+00:00",
+  "test_start": "2026-06-26 13:30:00+00:00",
+  "test_end": "2026-10-01 13:30:00+00:00",
+  "training_timestamp": "2026-10-05T09:33:29.642654+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.012016,
+      "rmse": 0.016145,
+      "r2": 0.0374,
+      "directional_accuracy": 56.72,
+      "directional_precision": 0.6364,
+      "directional_recall": 0.5526,
+      "directional_f1": 0.5915,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.023286,
+      "rmse": 0.031932,
+      "r2": -2.3261,
+      "directional_accuracy": 44.12,
+      "directional_precision": 0.5,
+      "directional_recall": 0.6316,
+      "directional_f1": 0.5581,
+      "sample_count": 68,
+      "ticker": "AAPL",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\AAPL_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T09:33:29.642654+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

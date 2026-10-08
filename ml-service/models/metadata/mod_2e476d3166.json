@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_2e476d3166",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "HDFCLIFE",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2018-01-30 00:00:00",
+  "training_end": "2022-03-21 00:00:00",
+  "validation_start": "2022-03-22 00:00:00",
+  "validation_end": "2023-02-03 00:00:00",
+  "test_start": "2023-02-06 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:20:44.235424+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.060481,
+      "rmse": 0.07413,
+      "r2": -0.0056,
+      "directional_accuracy": 47.49,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 219,
+      "ticker": "HDFCLIFE",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.056997,
+      "rmse": 0.069875,
+      "r2": -0.2456,
+      "directional_accuracy": 35.82,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 201,
+      "ticker": "HDFCLIFE",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\HDFCLIFE_target_return_20d_h20_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:20:44.235424+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

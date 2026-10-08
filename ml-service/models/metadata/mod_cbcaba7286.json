@@ -1,0 +1,71 @@
+{
+  "model_id": "mod_cbcaba7286",
+  "model_name": "XGBoost",
+  "model_version": "1.0.0",
+  "ticker": "NESTLEIND",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:24:27.406099+00:00",
+  "hyperparameters": {
+    "n_estimators": 40,
+    "max_depth": 4,
+    "learning_rate": 0.06,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3.0,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "early_stopping_rounds": 15
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.038739,
+      "rmse": 0.049495,
+      "r2": 0.1211,
+      "directional_accuracy": 71.38,
+      "directional_precision": 0.7703,
+      "directional_recall": 0.659,
+      "directional_f1": 0.7103,
+      "sample_count": 325,
+      "ticker": "NESTLEIND",
+      "model_name": "xgboost",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.042751,
+      "rmse": 0.053667,
+      "r2": -0.4448,
+      "directional_accuracy": 38.11,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 307,
+      "ticker": "NESTLEIND",
+      "model_name": "xgboost",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\NESTLEIND_target_return_20d_h20_xgboost_xgboost.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:24:27.406099+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_30d38f1d16",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "FEDERALBNK",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:19:35.640732+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.083642,
+      "rmse": 0.100863,
+      "r2": -0.2027,
+      "directional_accuracy": 50.77,
+      "directional_precision": 0.5539,
+      "directional_recall": 0.6209,
+      "directional_f1": 0.5855,
+      "sample_count": 325,
+      "ticker": "FEDERALBNK",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.079653,
+      "rmse": 0.098483,
+      "r2": -2.6741,
+      "directional_accuracy": 40.07,
+      "directional_precision": 0.65,
+      "directional_recall": 0.0684,
+      "directional_f1": 0.1238,
+      "sample_count": 307,
+      "ticker": "FEDERALBNK",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\FEDERALBNK_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:19:35.640732+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

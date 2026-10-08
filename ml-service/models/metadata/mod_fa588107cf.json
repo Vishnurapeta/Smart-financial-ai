@@ -1,0 +1,72 @@
+{
+  "model_id": "mod_fa588107cf",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "PAYTM",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2022-01-31 00:00:00",
+  "training_end": "2023-06-01 00:00:00",
+  "validation_start": "2023-06-02 00:00:00",
+  "validation_end": "2023-09-11 00:00:00",
+  "test_start": "2023-09-12 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T19:34:40.673478+00:00",
+  "hyperparameters": {
+    "sequence_length": 30,
+    "hidden_size": 32,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 128,
+    "epochs": 4,
+    "patience": 2,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.023439,
+      "rmse": 0.02839,
+      "r2": -0.2318,
+      "directional_accuracy": 44.29,
+      "directional_precision": 0.4412,
+      "directional_recall": 0.9677,
+      "directional_f1": 0.6061,
+      "sample_count": 70,
+      "ticker": "PAYTM",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.026603,
+      "rmse": 0.039324,
+      "r2": -0.5038,
+      "directional_accuracy": 50.79,
+      "directional_precision": 0.5,
+      "directional_recall": 0.9355,
+      "directional_f1": 0.6517,
+      "sample_count": 63,
+      "ticker": "PAYTM",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\PAYTM_target_next_return_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:34:40.673478+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": "models/artifacts\\PAYTM_target_next_return_h1_lstm_scaler.joblib",
+  "sequence_length": 30
+}

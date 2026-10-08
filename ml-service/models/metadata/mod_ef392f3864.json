@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_ef392f3864",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "IRFC",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2021-04-15 00:00:00",
+  "training_end": "2023-03-01 00:00:00",
+  "validation_start": "2023-03-02 00:00:00",
+  "validation_end": "2023-07-28 00:00:00",
+  "test_start": "2023-07-31 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:22:07.723857+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.033303,
+      "rmse": 0.042826,
+      "r2": -3.1614,
+      "directional_accuracy": 50.0,
+      "directional_precision": 0.4286,
+      "directional_recall": 0.0612,
+      "directional_f1": 0.1071,
+      "sample_count": 100,
+      "ticker": "IRFC",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.312623,
+      "rmse": 0.384237,
+      "r2": -89.0754,
+      "directional_accuracy": 46.08,
+      "directional_precision": 0.4,
+      "directional_recall": 0.0755,
+      "directional_f1": 0.127,
+      "sample_count": 102,
+      "ticker": "IRFC",
+      "model_name": "linear_regression",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\IRFC_target_next_return_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:22:07.723857+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

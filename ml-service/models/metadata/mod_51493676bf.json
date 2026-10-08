@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_51493676bf",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "TATAPOWER",
+  "target": "target_return_5d",
+  "horizon": 5,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:28:04.613825+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.096603,
+      "rmse": 0.141217,
+      "r2": -3.6067,
+      "directional_accuracy": 50.77,
+      "directional_precision": 0.6187,
+      "directional_recall": 0.4456,
+      "directional_f1": 0.5181,
+      "sample_count": 325,
+      "ticker": "TATAPOWER",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.072315,
+      "rmse": 0.112116,
+      "r2": -7.1368,
+      "directional_accuracy": 48.76,
+      "directional_precision": 0.5648,
+      "directional_recall": 0.3408,
+      "directional_f1": 0.4251,
+      "sample_count": 322,
+      "ticker": "TATAPOWER",
+      "model_name": "linear_regression",
+      "target": "target_return_5d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TATAPOWER_target_return_5d_h5_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:28:04.613825+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

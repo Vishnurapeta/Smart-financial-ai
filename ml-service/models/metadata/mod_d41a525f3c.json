@@ -1,0 +1,70 @@
+{
+  "model_id": "mod_d41a525f3c",
+  "model_name": "LSTM",
+  "model_version": "1.0.0",
+  "ticker": "ICICIBANK",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:21:09.970469+00:00",
+  "hyperparameters": {
+    "sequence_length": 5,
+    "hidden_size": 16,
+    "num_layers": 1,
+    "dropout": 0.1,
+    "learning_rate": 0.002,
+    "batch_size": 64,
+    "epochs": 3,
+    "patience": 5,
+    "random_state": 42
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.037532,
+      "rmse": 0.04584,
+      "r2": -7.4454,
+      "directional_accuracy": 47.08,
+      "directional_precision": 0.46,
+      "directional_recall": 0.1369,
+      "directional_f1": 0.211,
+      "sample_count": 325,
+      "ticker": "ICICIBANK",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.090802,
+      "rmse": 0.093492,
+      "r2": -82.1181,
+      "directional_accuracy": 49.08,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 326,
+      "ticker": "ICICIBANK",
+      "model_name": "lstm",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\ICICIBANK_target_next_return_h1_lstm_lstm.pt",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:21:09.970469+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

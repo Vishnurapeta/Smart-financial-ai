@@ -1,0 +1,73 @@
+{
+  "model_id": "mod_b93d4667aa",
+  "model_name": "XGBoost",
+  "model_version": "1.0.0",
+  "ticker": "AAPL",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2024-12-17 14:30:00+00:00",
+  "training_end": "2026-03-23 13:30:00+00:00",
+  "validation_start": "2026-03-24 13:30:00+00:00",
+  "validation_end": "2026-06-29 13:30:00+00:00",
+  "test_start": "2026-06-30 13:30:00+00:00",
+  "test_end": "2026-09-04 13:30:00+00:00",
+  "training_timestamp": "2026-10-05T18:55:18.971509+00:00",
+  "hyperparameters": {
+    "n_estimators": 60,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3.0,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "early_stopping_rounds": 15
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.084537,
+      "rmse": 0.09697,
+      "r2": -0.7384,
+      "directional_accuracy": 76.12,
+      "directional_precision": 0.7612,
+      "directional_recall": 1.0,
+      "directional_f1": 0.8644,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "xgboost",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.055996,
+      "rmse": 0.065345,
+      "r2": -0.0642,
+      "directional_accuracy": 60.42,
+      "directional_precision": 0.6042,
+      "directional_recall": 1.0,
+      "directional_f1": 0.7532,
+      "sample_count": 48,
+      "ticker": "AAPL",
+      "model_name": "xgboost",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\AAPL_target_return_20d_h20_xgboost_xgboost.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:55:18.971509+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

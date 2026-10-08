@@ -1,0 +1,58 @@
+{
+  "model_id": "mod_6dcfea6100",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "AAPL",
+  "target": "target_next_close",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2024-12-17 14:30:00+00:00",
+  "training_end": "2026-03-23 13:30:00+00:00",
+  "validation_start": "2026-03-24 13:30:00+00:00",
+  "validation_end": "2026-06-29 13:30:00+00:00",
+  "test_start": "2026-06-30 13:30:00+00:00",
+  "test_end": "2026-10-02 13:30:00+00:00",
+  "training_timestamp": "2026-10-05T18:54:59.724794+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 3.5013,
+      "rmse": 4.8658,
+      "mape": 1.2395,
+      "r2": 0.937,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "linear_regression",
+      "target": "target_next_close",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 6.0975,
+      "rmse": 8.4344,
+      "mape": 1.9193,
+      "r2": 0.4988,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "linear_regression",
+      "target": "target_next_close",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\AAPL_target_next_close_h1_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-10-05T18:54:59.724794+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

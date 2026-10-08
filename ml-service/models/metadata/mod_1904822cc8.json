@@ -1,0 +1,70 @@
+{
+  "model_id": "mod_1904822cc8",
+  "model_name": "RandomForest",
+  "model_version": "1.0.0",
+  "ticker": "AAPL",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2024-12-17 14:30:00+00:00",
+  "training_end": "2026-03-23 13:30:00+00:00",
+  "validation_start": "2026-03-24 13:30:00+00:00",
+  "validation_end": "2026-06-29 13:30:00+00:00",
+  "test_start": "2026-06-30 13:30:00+00:00",
+  "test_end": "2026-09-04 13:30:00+00:00",
+  "training_timestamp": "2026-10-05T19:09:21.397569+00:00",
+  "hyperparameters": {
+    "n_estimators": 40,
+    "max_depth": 6,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.096002,
+      "rmse": 0.111336,
+      "r2": -1.2916,
+      "directional_accuracy": 35.82,
+      "directional_precision": 1.0,
+      "directional_recall": 0.1569,
+      "directional_f1": 0.2712,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.063281,
+      "rmse": 0.07395,
+      "r2": -0.3629,
+      "directional_accuracy": 41.67,
+      "directional_precision": 1.0,
+      "directional_recall": 0.0345,
+      "directional_f1": 0.0667,
+      "sample_count": 48,
+      "ticker": "AAPL",
+      "model_name": "random_forest",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\AAPL_target_return_20d_h20_random_forest_random_forest.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:09:21.397569+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}

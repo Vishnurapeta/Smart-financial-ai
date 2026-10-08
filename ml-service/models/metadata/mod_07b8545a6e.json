@@ -1,0 +1,64 @@
+{
+  "model_id": "mod_07b8545a6e",
+  "model_name": "LinearRegression",
+  "model_version": "1.0.0",
+  "ticker": "BHEL",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:18:05.672765+00:00",
+  "hyperparameters": {
+    "fit_intercept": true,
+    "use_scaler": true,
+    "scaler_type": "standard"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.126086,
+      "rmse": 0.15279,
+      "r2": -0.7383,
+      "directional_accuracy": 40.0,
+      "directional_precision": 0.3911,
+      "directional_recall": 0.7794,
+      "directional_f1": 0.5209,
+      "sample_count": 325,
+      "ticker": "BHEL",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.114164,
+      "rmse": 0.156271,
+      "r2": -0.4979,
+      "directional_accuracy": 53.09,
+      "directional_precision": 0.7703,
+      "directional_recall": 0.5089,
+      "directional_f1": 0.6129,
+      "sample_count": 307,
+      "ticker": "BHEL",
+      "model_name": "linear_regression",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\BHEL_target_return_20d_h20_linear_regression_linear_regression.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:18:05.672765+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

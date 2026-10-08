@@ -1,0 +1,63 @@
+{
+  "model_id": "mod_7c01d6fd77",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "LTIM",
+  "target": "target_return_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2016-10-04 00:00:00",
+  "training_end": "2021-10-26 00:00:00",
+  "validation_start": "2021-10-27 00:00:00",
+  "validation_end": "2022-11-24 00:00:00",
+  "test_start": "2022-11-25 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-10-05T18:23:13.624068+00:00",
+  "hyperparameters": {
+    "task_type": "return",
+    "strategy": "zero_return"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.084345,
+      "rmse": 0.11182,
+      "r2": -0.0465,
+      "directional_accuracy": 56.72,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 268,
+      "ticker": "LTIM",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.057595,
+      "rmse": 0.07017,
+      "r2": -0.1215,
+      "directional_accuracy": 38.4,
+      "directional_precision": 0.0,
+      "directional_recall": 0.0,
+      "directional_f1": 0.0,
+      "sample_count": 250,
+      "ticker": "LTIM",
+      "model_name": "naive",
+      "target": "target_return_20d",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\LTIM_target_return_20d_h20_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T18:23:13.624068+00:00",
+      "reason": "Initial registration"
+    }
+  ]
+}

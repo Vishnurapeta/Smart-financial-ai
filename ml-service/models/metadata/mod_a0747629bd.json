@@ -1,0 +1,81 @@
+{
+  "model_id": "mod_a0747629bd",
+  "model_name": "XGBoost",
+  "model_version": "1.0.0",
+  "ticker": "TCS",
+  "target": "target_next_return",
+  "horizon": 1,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2015-03-17 00:00:00",
+  "training_end": "2021-05-14 00:00:00",
+  "validation_start": "2021-05-17 00:00:00",
+  "validation_end": "2022-09-02 00:00:00",
+  "test_start": "2022-09-05 00:00:00",
+  "test_end": "2023-12-28 00:00:00",
+  "training_timestamp": "2026-09-27T08:52:33.568655+00:00",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3.0,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "early_stopping_rounds": 15
+  },
+  "metrics": {
+    "validation": {
+      "mae": 0.010168,
+      "rmse": 0.013959,
+      "r2": 0.0138,
+      "directional_accuracy": 54.15,
+      "directional_precision": 0.5663,
+      "directional_recall": 0.5497,
+      "directional_f1": 0.5579,
+      "sample_count": 325,
+      "ticker": "TCS",
+      "model_name": "xgboost",
+      "target": "target_next_return",
+      "period": "validation",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    },
+    "test": {
+      "mae": 0.008615,
+      "rmse": 0.011615,
+      "r2": -0.0114,
+      "directional_accuracy": 52.15,
+      "directional_precision": 0.5318,
+      "directional_recall": 0.5509,
+      "directional_f1": 0.5412,
+      "sample_count": 326,
+      "ticker": "TCS",
+      "model_name": "xgboost",
+      "target": "target_next_return",
+      "period": "test",
+      "zero_return_treatment": "Treated as neutral/flat (non-positive in binary direction)"
+    }
+  },
+  "artifact_path": "models/artifacts\\TCS_target_next_return_xgboost_xgboost.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "PRODUCTION",
+  "status_history": [
+    {
+      "status": "EXPERIMENTAL",
+      "timestamp": "2026-09-27T08:52:33.568655+00:00",
+      "reason": "Initial registration"
+    },
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-09-27T08:52:37.504727+00:00",
+      "reason": "Candidate Selection Rationale for TCS (return prediction):\n- Primary Metric: RMSE (Optimization: MIN)\n- Validation Score: 0.013959\n- Outperforms Naive Baseline on validation set by 0.70% improvement in RMSE.\n- Selected Model: xgboost (ID: mod_a0747629bd)"
+    },
+    {
+      "status": "PRODUCTION",
+      "timestamp": "2026-09-27T09:15:18.010509+00:00",
+      "reason": "Approved production model based on lowest test RMSE"
+    }
+  ]
+}

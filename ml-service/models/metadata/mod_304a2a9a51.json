@@ -1,0 +1,57 @@
+{
+  "model_id": "mod_304a2a9a51",
+  "model_name": "NaiveBaseline",
+  "model_version": "1.0.0",
+  "ticker": "AAPL",
+  "target": "target_close_20d",
+  "horizon": 20,
+  "feature_version": "v1.0.0",
+  "preprocessing_version": "v1.0.0",
+  "training_start": "2024-12-17 14:30:00+00:00",
+  "training_end": "2026-03-23 13:30:00+00:00",
+  "validation_start": "2026-03-24 13:30:00+00:00",
+  "validation_end": "2026-06-29 13:30:00+00:00",
+  "test_start": "2026-06-30 13:30:00+00:00",
+  "test_end": "2026-09-04 13:30:00+00:00",
+  "training_timestamp": "2026-10-05T19:09:39.813985+00:00",
+  "hyperparameters": {
+    "task_type": "price",
+    "strategy": "current_close"
+  },
+  "metrics": {
+    "validation": {
+      "mae": 24.3134,
+      "rmse": 27.7919,
+      "mape": 7.997,
+      "r2": -1.4041,
+      "sample_count": 67,
+      "ticker": "AAPL",
+      "model_name": "naive",
+      "target": "target_close_20d",
+      "period": "validation"
+    },
+    "test": {
+      "mae": 17.7915,
+      "rmse": 20.6307,
+      "mape": 5.4942,
+      "r2": -1.8792,
+      "sample_count": 48,
+      "ticker": "AAPL",
+      "model_name": "naive",
+      "target": "target_close_20d",
+      "period": "test"
+    }
+  },
+  "artifact_path": "models/artifacts\\AAPL_target_close_20d_h20_naive_naive_baseline.joblib",
+  "dataset_version": "v1.0.0",
+  "status": "CANDIDATE",
+  "status_history": [
+    {
+      "status": "CANDIDATE",
+      "timestamp": "2026-10-05T19:09:39.813985+00:00",
+      "reason": "Initial registration"
+    }
+  ],
+  "scaler_artifact_path": null,
+  "sequence_length": null
+}
